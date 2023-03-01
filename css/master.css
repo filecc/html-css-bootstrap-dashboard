@@ -1,17 +1,28 @@
+/* header */
 header{
-    height: 50px;
+    height: 55px;
+}
+header img{
+    max-height: 40px;
 }
 nav{
     height: 50px;
 }
-
+.bell:hover{
+    color: orange;
+    cursor: pointer;
+}
+/* aside */
 aside{
     width: 50px;
     transition: all .3s;
+    background-image: url('../img/sidebar-bg.png');
+    background-color: #091e34;
 }
-
 @media screen and (min-width: 992px){
     aside{
-        width: 200px;
+        width: 150px;
     }
 }
+/* main content */
+

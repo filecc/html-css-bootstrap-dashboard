@@ -4,30 +4,63 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Boolean Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="./css/master.css">
   </head>
   <body class="bg-body-tertiary">
     <div class="wrapper d-flex flex-column vh-100">
-        <header class="">
-            <nav class="fixed-top bg-white">
-                <div class="container-fluid">
-                    nav
+        <header>
+            <nav class="fixed-top bg-white d-flex">
+                <div class="container-fluid d-flex align-items-center gap-4">
+                    <!-- logo brand -->
+                    <div class="flex-grow-0">
+                        <img class="img-fluid d-none d-lg-block" src="./img/logo.svg" alt="logo">
+                        <img class="img-fluid d-lg-none" src="./img/mobile-logo.png" alt="logo">
+                    </div>
+                    <!-- input search -->
+                    <div class="flex-grow-1">
+                        <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                    </div>
+                    <!-- button group hide if screen < lg -->
+                    <div class="flex-grow-0 d-flex justify-content-center align-items-center gap-3 d-none d-lg-flex">
+                        <i class="bell fs-5 fa-solid fa-list"></i>
+                        <i class="bell fs-5 fa-solid fa-circle-question"></i>
+                        <i class="bell fs-5 fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <!-- bell notification -->
+                    <div class="flex-grow-0 dropdown">
+                        <button type="button" class="bell border-0 bg-transparent dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span> <i class="fs-5 fa-solid fa-bell"></i></span>
+                          </button>
+
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                    </div>
                 </div>
             </nav>
         </header>
         <main class="d-flex h-100 flex-grow-1">
-            <aside class="flex-shrink-0 bg-primary">
-                aside menu
+            <aside class="flex-shrink-0 text-white">
+               <div class="container-fluid py-2">
+                aside
+               </div>
             </aside>
             <section class="flex-grow-1 bg-success h-100 overflow-y-auto">
                 <div class="pt-5">
-                    top main header
+                    <div class="container-fluid">
+                        top header main
+                    </div>
                 </div>
                 
                 <div class="overflow-y-auto">
-                    macin content
+                    <div class="container-fluid">
+                        main content
+                    </div>
                 </div>
             </section>
         </main>
