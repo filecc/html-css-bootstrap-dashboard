@@ -12,6 +12,11 @@ nav{
     color: orange;
     cursor: pointer;
 }
+.menu-hover:hover{
+    background-color: #696565af;
+    border-radius: 8px;
+    cursor: pointer;
+}
 /* aside */
 aside{
     width: 65px;
@@ -31,7 +36,7 @@ th img{
         width: 150px;
     }
     .w-md-75{
-        max-width: 75%;
+        max-width: 60%;
     }
 }
 
