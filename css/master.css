@@ -19,10 +19,19 @@ aside{
     background-image: url('../img/sidebar-bg.png');
     background-color: #091e34;
 }
+
+/* main content */
+
+
+/* media queries */
 @media screen and (min-width: 992px){
     aside{
         width: 150px;
     }
 }
-/* main content */
 
+@media screen and (min-width: 768px){
+    h1{
+        font-size:2rem ;
+    }
+}

@@ -1,15 +1,18 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Boolean Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="./css/master.css">
-  </head>
-  <body class="bg-body-tertiary">
+</head>
+
+<body class="bg-body-tertiary">
     <div class="wrapper d-flex flex-column vh-100">
         <!-- header -->
         <header>
@@ -22,7 +25,8 @@
                     </div>
                     <!-- input search -->
                     <div class="flex-grow-1">
-                        <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                        <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
+                               aria-label="Search">
                     </div>
                     <!-- button group hide if screen < lg -->
                     <div class="flex-grow-0 d-flex justify-content-center align-items-center gap-3 d-none d-lg-flex">
@@ -32,15 +36,16 @@
                     </div>
                     <!-- bell notification -->
                     <div class="flex-grow-0 dropdown">
-                        <button type="button" class="orange-hover border-0 bg-transparent dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button type="button" class="orange-hover border-0 bg-transparent dropdown-toggle-split"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                             <span> <i class="fs-5 fa-solid fa-bell"></i></span>
-                          </button>
+                        </button>
 
-                          <ul class="dropdown-menu">
+                        <ul class="dropdown-menu">
                             <li><a class="dropdown-item orange-hover" href="#">Profilo</a></li>
                             <li><a class="dropdown-item orange-hover" href="#">Fatturazione</a></li>
                             <li><a class="dropdown-item orange-hover" href="#">Logout</a></li>
-                          </ul>
+                        </ul>
                     </div>
                 </div>
             </nav>
@@ -48,51 +53,171 @@
         <!-- main -->
         <main class="d-flex h-100 flex-grow-1">
             <!-- sidebar -->
-            <aside class="flex-shrink-0 text-white">
+            <aside class="flex-shrink-0 text-white pt-5">
 
-               <div class="container-fluid h-100 py-4 d-flex flex-column gap-3">
-
+                <div class="container-fluid h-100 py-4 d-flex flex-column gap-3">
+                    <!-- top link -->
                     <div class="d-flex flex-column gap-3 align-items-center justify-content-center flex-grow-0 fs-5">
                         <ul class="list-unstyled w-100">
                             <li class="d-flex justify-content-center align-items-center orange-hover">
-                                <i class="fa-solid fa-house"></i> 
-                                <span class="d-none d-lg-block ms-2">Home</span> 
+                                <i class="fa-solid fa-house"></i>
+                                <span class="d-none d-lg-block ms-2">Home</span>
                             </li>
                             <li class="d-flex justify-content-center align-items-center orange-hover py-3">
                                 <i class="fa-solid fa-chart-simple"></i>
                                 <span class="d-none d-lg-block ms-2">Stats</span>
                             </li>
-                            <li class="d-flex justify-content-center align-items-center orange-hover"> 
+                            <li class="d-flex justify-content-center align-items-center orange-hover">
                                 <i class="fa-solid fa-signal"></i>
                                 <span class="d-none d-lg-block ms-2">Signals</span>
                             </li>
                         </ul>
                     </div>
-
+                    <!-- bottom gear -->
                     <div class="d-flex flex-column gap-3 align-items-center justify-content-end flex-grow-1 fs-5">
                         <ul class="list-unstyled w-100">
                             <li class="d-flex justify-content-center align-items-center">
-                                <i class="fa-solid fa-gear"></i> 
-                                <span class="d-none d-lg-block ms-2 orange-hover">Admin</span> 
+                                <i class="fa-solid fa-gear"></i>
+                                <span class="d-none d-lg-block ms-2 orange-hover">Admin</span>
                             </li>
                         </ul>
                     </div>
 
-               </div>
+                </div>
             </aside>
 
-            <section class="flex-grow-1 bg-success h-100 overflow-y-auto">
-                <div class="pt-5">
-                    <div class="container-fluid">
-                        top header main
+            <!-- central content -->
+            <section class="flex-grow-1 h-100 overflow-y-auto bg-primary d-flex flex-column pt-5 mt-4 mt-md-0 pt-md-0">
+
+                <!-- header central main -->
+                <div id="content-header" class="container-fluid bg-primary pt-md-5 text-white d-md-flex">
+                    <div class="row">
+
+                        <div class="col-12">
+
+                            <div class="row">
+
+                                <div class="pt-4 fs-4 align-items-center gap-4 order-md-2 col-12 col-md-4">
+                                    <div class="d-flex align-items-center align-items-md-start gap-4">
+                                        <p class="m-0">Nuovo Studente</p>
+                                        <button class="btn btn-lg btn-outline-light">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                                <div class="pt-4 order-md-0 col-md-4">
+
+                                    <h1>Boolean <span class="badge rounded-pill text-bg-dark fs-6 bg-opacity-25">Piano
+                                            blaze</span></h1>
+                                    <span class="badge rounded-pill text-bg-dark fs-6 bg-opacity-25">3 app</span>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <span class="badge rounded-pill text-bg-dark fs-6 bg-opacity-25">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </span>
+                                </div>
+
+                                <div class="py-4 order-md-1 col-md-4">
+                                    <div>
+                                        <p>Studenti online negli ultimi 30 minuti</p>
+                                        <p class="h1">125</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
-                
-                <div class="overflow-y-auto">
-                    <div class="container-fluid">
-                        main content
-                    </div>
+
+
+                <!-- main content -->
+
+                <div class="container-fluid bg-success overflow-y-auto flex-grow-1">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora obcaecati, officia cupiditate
+                    omnis distinctio velit provident sed totam odit architecto eligendi tenetur autem doloribus quo
+                    culpa nesciunt cum eaque a quod alias, ea consequuntur nostrum qui. Iste unde asperiores voluptates
+                    alias corrupti repellat eaque eos sequi, quis quidem aperiam saepe ad quo suscipit sed repudiandae
+                    porro voluptatem fugit ipsa itaque assumenda! Quos alias officia explicabo? Minus, nemo molestias!
+                    Saepe quasi repellendus totam deleniti optio a aliquam illo quod odio, iure consequatur ipsam
+                    commodi exercitationem ipsa repellat expedita, dolor eius minima placeat hic asperiores sed
+                    accusamus? Impedit quas hic recusandae qui. Error commodi doloremque, voluptas repudiandae molestiae
+                    dignissimos, natus amet, incidunt aut quas inventore ut corporis minima beatae. Ullam, earum. Odit
+                    reprehenderit dolorum autem excepturi perspiciatis rerum quisquam commodi, earum officia magnam
+                    nihil dolore libero aspernatur exercitationem expedita tenetur deserunt quaerat eum provident rem
+                    accusamus ratione laudantium modi iure. Excepturi voluptatibus odit iure ut nihil, veniam, possimus,
+                    laboriosam saepe incidunt qui numquam hic modi at pariatur tempora quo voluptas sint est ex
+                    dignissimos? Beatae quo magni suscipit. Aut reprehenderit sint inventore provident tempore quibusdam
+                    nesciunt blanditiis neque modi soluta fuga, aliquid repudiandae adipisci sunt itaque. Doloribus
+                    ratione magni, adipisci consequatur ducimus molestiae non? Provident dolorum dignissimos voluptatem
+                    quisquam saepe, quam voluptates commodi non placeat magni cumque harum perspiciatis illo iure
+                    laborum ut porro, veniam quas aut minima ratione doloremque. Libero cumque quae natus ipsam corporis
+                    assumenda aliquid est dolor veniam doloribus! Et omnis quisquam reprehenderit nesciunt aperiam
+                    ducimus quas voluptas dolore voluptatem magni, labore non. Ab sunt quis excepturi, ipsa quas
+                    adipisci incidunt quam harum necessitatibus ad recusandae neque omnis sequi odit saepe nostrum ipsum
+                    aspernatur tempora rem voluptatum quos illo praesentium maiores nemo. Exercitationem excepturi sequi
+                    eum quas voluptatum vel aliquid quae culpa vitae, rem laborum, error, deserunt fugit reiciendis!
+                    Fugit eius vel, magni laboriosam enim dolores consectetur atque odio fuga asperiores illo sed,
+                    tempore inventore eligendi consequuntur? Sit aliquid provident consequatur officiis molestias modi
+                    explicabo. Deleniti, sint dolor. Tempora fugit laborum magnam voluptatem eaque, temporibus explicabo
+                    numquam sequi cum hic! Dignissimos cumque sunt praesentium fugit asperiores nostrum dolorem,
+                    doloribus aperiam minus veniam aspernatur esse quaerat obcaecati quam placeat? Est alias numquam
+                    molestiae quas ipsum animi? Quos, eligendi quasi nihil perspiciatis beatae, ducimus labore
+                    distinctio voluptate veritatis suscipit adipisci dolores rerum perferendis facilis maiores dicta, a
+                    soluta nemo voluptatum enim. Sed sapiente quidem sunt dolor eaque ipsam adipisci aspernatur deserunt
+                    quasi reiciendis fugiat vel quod consectetur explicabo quisquam velit optio aliquid ad, molestiae
+                    quibusdam voluptate voluptatum? Nisi odio officiis atque debitis. Ex quaerat id esse, libero ullam
+                    officiis corporis aut, perferendis autem repudiandae nihil exercitationem ipsa! Unde numquam aliquid
+                    voluptates at architecto, doloribus, modi consectetur ipsum quisquam ut debitis soluta, sunt
+                    aspernatur! Eos, tenetur. Et reiciendis ab dolorum recusandae temporibus suscipit quasi inventore
+                    maiores incidunt, tempore neque modi consequuntur reprehenderit impedit debitis commodi in deserunt
+                    sint facilis. Culpa ipsa ea, doloribus alias itaque officia consequatur laudantium tempore
+                    praesentium quibusdam perspiciatis nulla, dolores vitae reprehenderit dolore, amet maiores.
+                    Voluptatem et explicabo earum repellendus veritatis aliquam culpa harum! Odit, vero provident?
+                    Architecto, odio nemo nulla maxime repellendus excepturi tempora doloribus pariatur, sequi, fugit
+                    quaerat quos unde a officiis voluptatum impedit. Inventore maiores a officiis similique delectus,
+                    deleniti distinctio quae consectetur quis repellendus omnis natus soluta sunt. Libero nemo hic,
+                    ratione cumque laudantium voluptate aut quia, aliquam ex neque sequi eaque praesentium harum
+                    cupiditate iure nobis illo sapiente fugiat, eos illum animi ab excepturi. Veniam possimus quos velit
+                    necessitatibus unde omnis eos quisquam sint hic cupiditate debitis nostrum, molestias rerum
+                    reiciendis labore quidem, at eveniet quam excepturi facilis fuga cumque fugiat! Neque modi iusto
+                    excepturi harum, sed soluta sequi voluptatum, esse cupiditate sit consectetur expedita nisi
+                    temporibus ratione eligendi asperiores quos alias id rem illo velit saepe natus omnis doloribus!
+                    Incidunt iste mollitia dolorum facere voluptatum commodi repudiandae, maxime ullam itaque illum
+                    fugit! Obcaecati consequatur facere exercitationem aperiam corrupti odio corporis nesciunt ullam
+                    fugiat id culpa natus maxime, veritatis consequuntur doloremque. Iusto necessitatibus adipisci sit
+                    consequatur nemo recusandae consectetur eligendi harum beatae. Laborum accusamus, hic quos expedita
+                    minus dicta fugit eaque eos enim architecto inventore rerum velit similique numquam debitis,
+                    voluptate laboriosam deserunt est quia porro reprehenderit mollitia libero? Omnis optio repellendus
+                    eius deleniti aut, necessitatibus quia cum blanditiis sit esse neque? Voluptas culpa quaerat tempore
+                    earum. Placeat, quod eos. Id labore facilis sapiente, quas iste ex! Sint quam nostrum corporis
+                    dolores dicta sunt! Nobis necessitatibus suscipit sunt minus maiores, repudiandae praesentium
+                    dolorem voluptatibus provident optio inventore? Debitis, voluptate rem! Omnis ratione modi pariatur
+                    fuga obcaecati dignissimos? Eaque voluptatibus, deserunt nihil inventore laboriosam enim voluptate
+                    ducimus culpa. Maxime assumenda accusamus maiores. Sint quas libero pariatur laboriosam cumque
+                    aspernatur dolores dicta consectetur repellat, dolor quis accusantium, voluptate totam facilis,
+                    perferendis labore ratione harum. Eius at quisquam cum similique reprehenderit optio rerum adipisci!
+                    Ipsam tenetur id, dignissimos inventore sequi veritatis aliquid. Eveniet, facere alias. Neque,
+                    eligendi, odio necessitatibus soluta sunt animi corrupti quos facilis aliquam voluptatibus
+                    cupiditate! Natus eum deserunt, consectetur fuga cumque voluptate dolorem ad ullam repellat libero
+                    facere similique. Vel odit similique veritatis aperiam suscipit natus vero corporis quisquam dolore
+                    libero quos deleniti harum, vitae consequuntur, nisi in facere ducimus nesciunt, porro temporibus
+                    provident quidem fugit! Mollitia quia, rerum consectetur quas dolorem placeat earum hic sit amet quo
+                    modi quae temporibus cumque dolor dicta ipsum error praesentium soluta nulla maxime magnam animi cum
+                    quisquam. Quos excepturi praesentium beatae molestias tempora deserunt laudantium omnis, sequi
+                    fugiat voluptatum? Officia assumenda sequi in quibusdam maxime veritatis ea eaque iure repellat
+                    nulla? Rerum eveniet quis maxime atque eum iusto tempora, quaerat architecto, velit dolorem nisi hic
+                    veritatis. Sed doloremque expedita velit natus suscipit cupiditate facere veniam adipisci dolorem
+                    maxime. Veritatis officiis obcaecati eveniet voluptatibus quidem eos rerum explicabo vero sed labore
+                    rem sit, libero reiciendis quis, tempore, ducimus quasi ut dolore laudantium unde? Iure beatae
+                    aliquam cumque tempora quos atque rem voluptatem, modi illo repellendus! Eius at fuga suscipit vero
+                    nihil nam unde nemo repellendus facere ducimus, sit ullam. Esse qui recusandae eos officia aut ad
+                    accusamus.
                 </div>
+
             </section>
         </main>
     </div>
@@ -101,6 +226,9 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+</body>
+
 </html>
