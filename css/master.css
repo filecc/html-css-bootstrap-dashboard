@@ -1,0 +1,17 @@
+header{
+    height: 50px;
+}
+nav{
+    height: 50px;
+}
+
+aside{
+    width: 50px;
+    transition: all .3s;
+}
+
+@media screen and (min-width: 992px){
+    aside{
+        width: 200px;
+    }
+}
