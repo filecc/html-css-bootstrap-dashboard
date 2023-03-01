@@ -8,13 +8,13 @@ header img{
 nav{
     height: 50px;
 }
-.bell:hover{
+.orange-hover:hover{
     color: orange;
     cursor: pointer;
 }
 /* aside */
 aside{
-    width: 50px;
+    width: 65px;
     transition: all .3s;
     background-image: url('../img/sidebar-bg.png');
     background-color: #091e34;
