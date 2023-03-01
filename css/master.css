@@ -21,7 +21,9 @@ aside{
 }
 
 /* main content */
-
+th img{
+    width: 25px;
+}
 
 /* media queries */
 @media screen and (min-width: 992px){
@@ -33,5 +35,8 @@ aside{
 @media screen and (min-width: 768px){
     h1{
         font-size:2rem ;
+    }
+    .new-student{
+        font-size: 1rem;
     }
 }
