@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/filecc/html-css-bootstrap-dashboard](https://github.com/filecc/html-css-bootstrap-dashboard)
-- Live Site URL: [https://filecc.github.io/FM-clipboard-landing-page/](https://filecc.github.io/FM-clipboard-landing-page/)
+- Live Site URL: [https://filecc.github.io/html-css-bootstrap-dashboard/](https://filecc.github.io/html-css-bootstrap-dashboard/)
 
 ## My process
 
