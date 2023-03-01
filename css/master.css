@@ -39,4 +39,8 @@ th img{
     .new-student{
         font-size: 1rem;
     }
+    th img{
+        width: 25px;
+        height: 25px;
+    }
 }
