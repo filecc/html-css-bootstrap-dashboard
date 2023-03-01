@@ -10,8 +10,7 @@ This is a solution to the Dashboard Exercise from Boolean Academy.
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
+-[Author](#author)
 
 
 
@@ -31,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/filecc/FM-clipboard-landing-page](https://github.com/filecc/FM-clipboard-landing-page)
+- Solution URL: [https://github.com/filecc/html-css-bootstrap-dashboard](https://github.com/filecc/html-css-bootstrap-dashboard)
 - Live Site URL: [https://filecc.github.io/FM-clipboard-landing-page/](https://filecc.github.io/FM-clipboard-landing-page/)
 
 ## My process
@@ -41,29 +40,13 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile and Desktop side by side workflow
+- [Bootstrap]!(https://getbootstrap.com) - CSS Framework
 
 
-### What I learned
+### Author
 
-I had some difficult trying positioning the image in the first section, so I decided to take a look at it later on. 
-I worked side by side with Desktop an Mobile preview, so I was targetting everything before commit, to make sure that the elements were good enouught.
-Love how I wrote +200 line of code and just 90 lines for the @media.
-Sure, it can be better. 
-
-As always the best help is this:
-
-
-```css
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.social a:hover{
-    filter: invert(60%) sepia(74%) saturate(437%) hue-rotate(121deg) brightness(88%) contrast(85%);
-}
-```
-### Useful resources
-
-- [CSS filter for SVG](https://codepen.io/sosuke/pen/Pjoqqp) - Always so much love.
+- Website - [Instagram](https://www.instagram.com/filecc)
+- Frontend Mentor - [@filecc](https://www.frontendmentor.io/profile/filecc)
+- Twitter - [@_filecc](https://www.twitter.com/_filecc)
 
