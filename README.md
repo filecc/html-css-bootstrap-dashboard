@@ -25,8 +25,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](./clipboard-desktop.png)
-![Mobile](./clipboard-mobile.png)
+![Desktop](./desktop.png)
+![Tablet](./tablet.png)
+![Mobile](./mobile.png)
 
 ### Links
 
