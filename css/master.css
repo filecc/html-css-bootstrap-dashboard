@@ -8,6 +8,10 @@ header img{
 nav{
     height: 50px;
 }
+
+input[type='search']::placeholder {
+    font-family: system-ui, FontAwesome, sans-serif;
+}
 .orange-hover:hover{
     color: orange;
     cursor: pointer;
